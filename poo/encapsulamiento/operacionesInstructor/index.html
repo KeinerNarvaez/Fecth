@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomina</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="portada">
+      <div class="hoja1">
+        <div class="hoja2">
+          <div class="hoja3">
+            <div class="hoja4">
+              <div class="row col-12 libro">
+                <div class="izquierda col-6 formulario">
+                  <form class="row g-3 needs-validation" novalidate method="#" onsubmit="return nomina()">
+                    <h3 style="margin-left: 65px;">Formulario</h3>
+                    <div class="col-md-8">
+                        <label for="validationServer01" class="form-label">Valor de día</label>
+                        <input type="number" min="0" step="1" class="form-control is-valid" id="txtvalordia" value="0" required>
+                      </div>
+                      <div class="col-md-8">
+                        <label for="validationServer01" class="form-label">días</label>
+                        <input type="number" min="0" step="1" class="form-control is-valid" id="txtdias" value="0" required>
+                      </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary col-8" type="submit">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="derecha col-5  respuesta" align="center">
+                  <div class="col-12">
+                    <h3> Respuesta </h3>         
+                 </div>
+                 <div id="resultado"></div>
+             </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
